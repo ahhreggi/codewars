@@ -1,4 +1,5 @@
 // Roman Numerals Encoder
+// https://www.codewars.com/kata/51b62bf6a9c58071c600001b
 
 // Return num in Roman Numerals up to 1 million
 const roman = (num) => {
@@ -12,13 +13,16 @@ const roman = (num) => {
     XC: 90, L: 50, XL: 40, X: 10,
     IX: 9, V: 5, IV: 4, I: 1
   };
+
   let result = "";
+
   for (const key in numerals) {
     while (num >= numerals[key]) {
       result += key;
       num -= numerals[key];
     }
   }
+
   return result.split(")(").join("");
 
 };

@@ -1,5 +1,7 @@
 // The Observed PIN
+// https://www.codewars.com/kata/5263c6999e0f40dee200059d
 
+// Return all variations of an observed PIN, given that each digit may instead be an adjacent key
 const getPINs = (observed) => {
 
   const adj = {
