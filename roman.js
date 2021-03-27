@@ -1,4 +1,6 @@
-// Returns num in Roman Numerals up to 1 million.
+// Roman Numerals Encoder
+
+// Return num in Roman Numerals up to 1 million
 const roman = (num) => {
 
   const numerals = {
